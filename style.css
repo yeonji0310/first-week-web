@@ -1,0 +1,59 @@
+  body{
+      margin:0;
+      background-image: url(cloud.jpg);
+      background-size: 1400px;
+        }
+
+    a {
+      color:black;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size:45px;
+      background-color:#F9FBA7;
+      font-family: 'Gaegu', cursive;
+      text-align:center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+        text-emphasis-color: forestgreen;
+        border-right:1px solid gray;
+        font-family: 'Gaegu', cursive;
+        width:100px;
+        margin:0;
+        padding:20px;
+        color: yellowgreen;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol{
+        padding-left:33px;
+      }
+      #grid #article {
+        padding-left:25px;
+      }
+      @media(max-width:800px){
+      #grid{
+        display: block;
+      }
+      ol{
+        border-right:none;
+      }
+      h1 {
+        border-bottom:none;
+        font-family: 'Gaegu', cursive;
+      }
+      h2 {
+        font-family: 'Gaegu', cursive;
+      }
+      h3 {
+        font-family: 'Gaegu', cursive;
+      p {  
+        font-family: 'Gaegu', cursive;
+      }
+    }
