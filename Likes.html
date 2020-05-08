@@ -5,6 +5,13 @@
   <meta charset="utf-8">
 
   <link rel="stylesheet" href="style.css">
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 
 </head>
 
@@ -12,15 +19,15 @@
 
   <h1><a href="index.html">Dailyeonjew</a></h1>
   <div id="grid">
-  <ol>
-      <li><a href="Likes.html">Likes</a></li>
-      <li><a href="Friends.html">Friends</a></li>
-      <li><a href="Q&A.html">Q&A</a></li>
-
-  </ol>
+    <br><ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="Likes.html">Likes</a></li>
+      <li role="presentation"><a href="Friends.html">Friends</a></li>
+      <li role="presentation"><a href="Q&A.html">Q&A</a></li>
+    </ul>
+    <br>
   
   <div id="article">
-    <h2>My Favorites</h2>
+    <h2 class="bg-warning">My Favorites</h2>
 
     <p>
         <h3>Musicals</h3>
@@ -29,9 +36,9 @@
         <br>
         <br>Entae Park & Jisang Han
         <br>
-        <br><img src="park.jpg" width="200px">
+        <br><img src="park.jpg" width="200px" class="img-thumbnail">
        
-        <img src="han.jpg" width="200px">
+        <img src="han.jpg" width="200px" class="img-thumbnail">
         <br>
         <br>
         <br> theatergoing list:
