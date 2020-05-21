@@ -18,6 +18,21 @@
 
 <body>
   <h1><a href="index.html">Dailyeonjew</a></h1>
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  
+  if(this.value === 'night')
+    {target.style.backgroundColor= 'rgb(66,107,147)';
+     target.style.color='white';
+     this.value = 'day';}
+         
+    else{
+     target.style.backgroundColor='rgb(185,201,223)';
+     target.style.color='black';
+     this.value = 'night';
+     var i=0;
+     }">
+     
   <div id="grid">
     <br><ul class="nav nav-tabs">
       <li role="presentation" class="active"><a href="Likes.html">Likes</a></li>
