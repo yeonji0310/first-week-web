@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK</title>
+
+    <link rel="stylesheet" href="styleclock.css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+
+    
+
+</head>
+
+<body>
+
+    <h1><a href="index.html">Dailyeonjew</a></h1>
+
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    
+    if(this.value === 'night')
+      {target.style.backgroundColor= 'rgb(66,107,147)';
+       target.style.color='white';
+       this.value = 'day';}
+           
+      else{
+       target.style.backgroundColor='rgb(185,201,223)';
+       target.style.color='black';
+       this.value = 'night';
+       var i=0;
+       }">
+
+<div id="grid">
+    <br><ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="Likes.html">Like</a></li>
+      <li role="presentation"><a href="Friends.html">Friends</a></li>
+      <li role="presentation"><a href="Q&A.html">Q&A</a></li>
+      <li role="presentation"><a href="CLOCK.html">CLOCK</a></li>
+    </ul>
+    <br>
+
+
+<div class="content">
+    <div class="window">
+        <div id="W_Clock">
+         <h3>CLOCK</h3>   
+         <h2>00:00:00</h2>
+        </div>
+        <div id="W_Stopwatch">
+            <h3>STOPWATCH</h3>   
+            <h2>00:00</h2>
+            <button id="start">start</button>
+            <button id="reset">reset</button>
+        </div>
+       
+        </div>
+    <div class="select">
+        <input id= selectClock type="radio" name= "select" checked>
+        <input id= selectStopwatch type="radio" name= "select">
+        
+    </div>
+    
+</div>
+
+</body>
+
+<script type="text/javascript" src="tab1.js"></script>
+
+<script type="text/javascript" src="clock1.js"></script>
+
+<script type="text/javascript" src="stopwatch1.js"></script>
+
+</html>

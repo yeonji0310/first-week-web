@@ -1,0 +1,67 @@
+.content{
+    width: 50% ;
+    height: 30%;
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    text-align: center;
+}
+
+.window{
+    border: 5px solid black;
+    height: 100%;
+    border-radius: 5px;
+
+}
+#W_Stopwatch, #W_Timer{
+    display:none;
+}
+input[type=number]{
+    width:50px;
+}
+h2{
+    font-size: 80px;
+    margin: -25px 0px 0px 0px;
+    text-shadow: 2px 2px rgb(54, 54, 54);
+    color:black  
+}
+h1 {
+    border-bottom:none;
+    font-family: 'Gaegu', cursive;
+    font-size:45px;
+    background-color:#F9FBA7;
+    font-family: 'Gaegu', cursive;
+    text-align:center;
+    border-bottom:1px solid gray; z-index:8;
+    margin:0;
+    padding:20px;}
+h3{
+    color:black;
+    text-align: center;
+}
+ol{
+    text-emphasis-color: forestgreen;
+    border-right:1px solid gray;
+    font-family: 'Gaegu', cursive;
+    width:100px;
+    margin:0;
+    padding:20px;
+    color: yellowgreen;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left:33px;
+  }
+  #grid #article {
+    padding-left:25px;
+  }
+  @media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  ol{
+    border-right:none;
+  }
