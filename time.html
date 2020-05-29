@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<!--conent가 body 바로 밑에 위치하기 떄문에 부모 태그인 바디의 50% 만큼의 넓이라는 뜻 -->
+
+<body>
+    <div class="content">
+        <div class="window">
+            <div id="W_Clock">
+             <h3>CLOCK</h3>   
+             <h1>00:00:00</h1>
+            </div>
+            <div id="W_Stopwatch">
+                <h3>STOPWATCH</h3>   
+                <h1>00:00</h1>
+                <button id="start">start</button>
+                <button id="reset">reset</button>
+            </div>
+            <div id="W_Timer">
+                <h3>TIMER</h3>   
+                <h1>00:00</h1>
+                <input id= "m_timer" type="number">
+                <input id= "s_timer" type="number">
+                <button id="start">start</button>
+                <button id="reset">reset</button>
+                    
+                               
+               </div>
+            
+            </div>
+        <div class="select">
+            <input id= selectClock type="radio" name= "select" checked>
+            <input id= selectStopwatch type="radio" name= "select">
+            <input id= selectTimer type="radio" name= "select">
+        </div>
+        <!--nanme= 으로 묶어버리면 하나로 인식해서 중복으로 선택 불가능함
+        type= radio 는 동그라미 클릭하는거-->
+    </div>
+</body>
+<script type="text/javascript" src="tab.js"></script>
+
+<script type="text/javascript" src="clock.js"></script>
+
+<script type="text/javascript" src="stopwatch.js"></script>
+
+<script type="text/javascript" src="timer.js"></script>
+</html>
