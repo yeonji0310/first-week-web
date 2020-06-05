@@ -18,11 +18,28 @@
 
 <body>
   <h1><a href="index.html">Dailyeonjew</a></h1>
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  
+  if(this.value === 'night')
+    {target.style.backgroundColor= 'rgb(66,107,147)';
+     target.style.color='white';
+     this.value = 'day';}
+         
+    else{
+     target.style.backgroundColor='rgb(185,201,223)';
+     target.style.color='black';
+     this.value = 'night';
+     var i=0;
+     }">
+     
   <div id="grid">
     <br><ul class="nav nav-tabs">
       <li role="presentation" class="active"><a href="Likes.html">Likes</a></li>
       <li role="presentation"><a href="Freinds.html">Friends</a></li>
       <li role="presentation"><a href="Q&A.html">Q&A</a></li>
+      <li role="presentation"><a href="CLOCK.html">CLOCK</a></li>
+      <li role="presentation"><a href="Weather.html">Weather</a></li>
     </ul>
     <br>
   <div id="article">
@@ -32,10 +49,28 @@
     <form action answer.html>
       <p>궁금한 점은 여기에 적어주세요:)</p>
       <br>
-      <textarea class="form-control" rows="3"></textarea>
-      <br>
-      <br>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      
+
+      <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://dailyeonjew.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
  
 </form>
 

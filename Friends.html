@@ -16,7 +16,50 @@
 </head>
 
 <body>
+  <script  language="Javascript">
+    
+    var goURL  = "Friends.html"  //이곳에 인증이 되었을때 이동할 페이지  입력
+        alert("패스워드를 입력하셔야 합니다.")
+    
+    
+    var password =  prompt("PASSWD 입력","")
+    
+        if (password == null)  {
+            alert("출입금지")
+            location = history.back();}
+        else  {
+            var  combo =  password
+            var  total =  combo.toLowerCase()
+    
+        if  (total == "1234")  {                // 비밀번호
+            alert("안녕하세요...어서오십시요...")
+            location.replace =  goURL
+        }
+        else  {
+            alert("출입금지")
+            location  = history.back();   // 실패시 이동 주소      history.back();를 넣어도 됨
+        }
+    }
+    
+    </script>
+
   <h1><a href="index.html">Dailyeonjew</a></h1>
+
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  
+  if(this.value === 'night')
+    {target.style.backgroundColor= 'rgb(66,107,147)';
+     target.style.color='white';
+     this.value = 'day';}
+         
+    else{
+     target.style.backgroundColor='rgb(185,201,223)';
+     target.style.color='black';
+     this.value = 'night';
+     var i=0;
+     }"> 
+
   <div id="grid">
     <br><ul class="nav nav-tabs">
       <li role="presentation" class="active"><a href="Likes.html">Likes</a></li>

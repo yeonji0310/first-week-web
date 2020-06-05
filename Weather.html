@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Weather</title>
+    
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+      
+        <!-- 부가적인 테마 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+      
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+      
+<body>
+        <h1><a href="index.html">Dailyeonjew</a></h1>
+      
+        <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        
+        if(this.value === 'night')
+          {target.style.backgroundColor= 'rgb(66,107,147)';
+           target.style.color='white';
+           this.value = 'day';}
+               
+          else{
+           target.style.backgroundColor='rgb(185,201,223)';
+           target.style.color='black';
+           this.value = 'night';
+           var i=0;
+           }">
+      
+      
+        <div id="grid">
+          <br><ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="Likes.html">Likes</a></li>
+            <li role="presentation"><a href="Friends.html">Friends</a></li>
+            <li role="presentation"><a href="Q&A.html">Q&A</a></li>
+            <li role="presentation"><a href="CLOCK.html">CLOCK</a></li>
+            <li role="presentation"><a href="Weather.html">Weather</a></li>
+          </ul>
+          <br>
+        
+        </div>
+        </div>
+           
+    <span class="js-weather"></span>
+    <script src="weather.js"></script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>Copyright © 2020 yeonji.co All rights reserved.</p>
+        <address>Contact webmaster for more information. 010-5007-1612</address>
+    </footer>
+    
+</body>
+</html>
